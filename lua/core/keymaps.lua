@@ -25,6 +25,7 @@ vim.keymap.set('n', '<A-h>', ':vertical resize -2<CR>', { desc = "Make window ve
 vim.keymap.set('n', '<A-l>', ':vertical resize +2<CR>', { desc = "Make window vertically bigger" })
 vim.keymap.set('n', '<A-j>', ':resize -2<CR>', { desc = "Make window horizontally smaller" })
 vim.keymap.set('n', '<A-k>', ':resize +2<CR>', { desc = "Make window horizontally bigger" })
+vim.keymap.set('n', '<C-CR>', ':10split | terminal<CR>', { desc = "Opens terminal emulator" })
 vim.api.nvim_create_autocmd('TextYankPost', {
   desc = 'Highlight when yanking (copying) text',
   group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
@@ -32,5 +33,3 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     vim.hl.on_yank()
   end,
 })
-
-
