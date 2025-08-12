@@ -8,7 +8,7 @@ vim.o.mouse = 'a' -- Enable mouse mode
 vim.o.autoindent = true -- Copy indent from current line when starting new one
 vim.o.ignorecase = true -- Case-insensitive searching UNLESS \C or capital in search
 vim.o.smartcase = true -- Smart case
-vim.g.have_nerd_font = false
+vim.g.have_nerd_font = true
 vim.o.showmode = false -- Don't show the mode, since it's already in the status line
 vim.o.breakindent = true -- Enable break indent
 vim.o.undofile = true -- Save undo history
@@ -26,3 +26,4 @@ vim.o.confirm = true
 vim.o.numberwidth = 2
 vim.o.smartindent = true
 vim.o.termguicolors = true
+

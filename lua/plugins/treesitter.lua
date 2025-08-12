@@ -27,6 +27,7 @@ return {
         'gitignore',
         'graphql',
         'yaml',
+        'ruby',
         'make',
         'cmake',
         'markdown',
