@@ -3,7 +3,6 @@ return {
   'nvim-lualine/lualine.nvim',
   config = function()
     -- Adapted from: https://github.com/nvim-lualine/lualine.nvim/blob/master/lua/lualine/themes/onedark.lua
-    
     local mode = {
       'mode',
       fmt = function(str)
