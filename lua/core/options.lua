@@ -26,4 +26,5 @@ vim.o.confirm = true
 vim.o.numberwidth = 2
 vim.o.smartindent = true
 vim.o.termguicolors = true
-
+vim.opt.winborder = 'rounded'
+vim.opt.completeopt = { "menuone", "noselect", "popup" }

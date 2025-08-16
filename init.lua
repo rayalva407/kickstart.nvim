@@ -1,5 +1,6 @@
 require 'core.options'
 require 'core.keymaps'
+require 'plugins.lsp'
 
 -- Lazy.nvim install
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
@@ -11,12 +12,6 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
   end
 end
 
-local function myFunc(random_param)
-    print(random_param)
-end
-
-myFunc()
-
 local rtp = vim.opt.rtp
 rtp:prepend(lazypath)
 
@@ -26,8 +21,5 @@ require('lazy').setup({
   require 'plugins.lualine',
   require 'plugins.treesitter',
   require 'plugins.telescope',
-  require 'plugins.lsp',
   require 'plugins.whichkey'
 })
-
-
