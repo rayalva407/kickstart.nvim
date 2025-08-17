@@ -4,6 +4,7 @@ vim.lsp.enable({
     'cssls',
     'ts_ls',
     'jsonls',
+    'ruby_lsp'
 })
 
 vim.diagnostic.config({
