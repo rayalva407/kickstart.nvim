@@ -3,6 +3,7 @@ vim.lsp.enable({
     'html',
     'cssls',
     'ts_ls',
+    'jsonls',
 })
 
 vim.diagnostic.config({
