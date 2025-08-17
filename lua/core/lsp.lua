@@ -1,5 +1,8 @@
 vim.lsp.enable({
-    'lua_ls'
+    'lua_ls',
+    'html',
+    'cssls',
+    'ts_ls',
 })
 
 vim.diagnostic.config({
