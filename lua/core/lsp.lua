@@ -9,11 +9,13 @@ vim.lsp.enable {
 
 vim.lsp.config('*', {
 	on_attach = function(client, bufnr)
+		local capabilities = require('cmp_nvim_lsp').default_capabilities()
 		vim.lsp.completion.enable(true, client.id, bufnr, {
 			autotrigger = true,
 			convert = function(item)
 				return { abbr = item.label:gsub('%b()', '') }
 			end,
+			capabilities = capabilities,
 		})
 		vim.keymap.set('i', '<C-space>', vim.lsp.completion.get, { desc = 'trigger autocompletion' })
 	end,
