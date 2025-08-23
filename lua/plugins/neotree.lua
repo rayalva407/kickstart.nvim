@@ -7,5 +7,6 @@ return {
 		'nvim-tree/nvim-web-devicons',
 	},
 	lazy = false,
+
 	vim.keymap.set('n', '<leader>e', ':Neotree toggle position=left<CR>'),
 }
